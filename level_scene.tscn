@@ -1,3 +1,55 @@
 [gd_scene format=3 uid="uid://b14r4vtekgfau"]
 
+[ext_resource type="Texture2D" uid="uid://byyxnp63imhjc" path="res://download.jpg" id="1_187gu"]
+[ext_resource type="Texture2D" uid="uid://buohm1tkvswm5" path="res://icon.svg" id="2_3mivm"]
+
 [node name="level_scene" type="Node2D" unique_id=189582234]
+
+[node name="background" type="TextureRect" parent="." unique_id=1972167065]
+offset_right = 1147.0
+offset_bottom = 640.0
+texture = ExtResource("1_187gu")
+
+[node name="sun container" type="HBoxContainer" parent="." unique_id=253381043]
+offset_left = 226.0
+offset_top = 82.0
+offset_right = 882.0
+offset_bottom = 210.0
+
+[node name="sun 1" type="TextureRect" parent="sun container" unique_id=1791223356]
+layout_mode = 2
+texture = ExtResource("2_3mivm")
+
+[node name="sun 2" type="TextureRect" parent="sun container" unique_id=974844877]
+layout_mode = 2
+texture = ExtResource("2_3mivm")
+
+[node name="sun 3" type="TextureRect" parent="sun container" unique_id=825362503]
+layout_mode = 2
+texture = ExtResource("2_3mivm")
+
+[node name="sun 4" type="TextureRect" parent="sun container" unique_id=781597641]
+layout_mode = 2
+texture = ExtResource("2_3mivm")
+
+[node name="sun 5" type="TextureRect" parent="sun container" unique_id=2050296349]
+layout_mode = 2
+texture = ExtResource("2_3mivm")
+
+[node name="level" type="RichTextLabel" parent="." unique_id=1918421651]
+offset_left = 486.0
+offset_top = 392.0
+offset_right = 1665.0
+offset_bottom = 451.0
+theme_override_colors/default_color = Color(0, 0.044945814, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "level #"
+
+[node name="timer" type="RichTextLabel" parent="." unique_id=1211596074]
+offset_left = 513.0
+offset_top = 302.0
+offset_right = 605.0
+offset_bottom = 366.0
+theme_override_colors/default_color = Color(0.043137256, 0.003921569, 0.050980393, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "0.0"
