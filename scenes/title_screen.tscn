@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://dj2at7re3twug"]
+
+[ext_resource type="Texture2D" uid="uid://byyxnp63imhjc" path="res://download.jpg" id="1_fgkus"]
+[ext_resource type="Script" uid="uid://b6lsq1fnfdc5p" path="res://scenes/title_screen.gd" id="1_sa3yf"]
+
+[node name="TitleScreen" type="Node2D" unique_id=1854919159]
+script = ExtResource("1_sa3yf")
+
+[node name="background" type="TextureRect" parent="." unique_id=1887791773]
+offset_left = 5.0
+offset_top = -3.0
+offset_right = 1157.0
+offset_bottom = 643.0
+texture = ExtResource("1_fgkus")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=331578271]
+clip_contents = false
+anchors_preset = -1
+anchor_right = 0.117000006
+anchor_bottom = 0.113000005
+offset_left = 256.0
+offset_top = 7.0
+offset_right = 946.0
+offset_bottom = 293.0
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/normal_font_size = 108
+text = "WARIOWARE               CHALLENGE"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=365439929]
+offset_left = 480.0
+offset_top = 321.0
+offset_right = 672.0
+offset_bottom = 590.0
+
+[node name="start button" type="Button" parent="VBoxContainer" unique_id=872246046]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "START GAME"
+
+[node name="setting" type="Button" parent="VBoxContainer" unique_id=1194596046]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "SETTINGS"
+
+[node name="QUIT" type="Button" parent="VBoxContainer" unique_id=1947410650]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "QUIT"
+
+[connection signal="pressed" from="VBoxContainer/start button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/setting" to="." method="_on_setting_pressed"]
+[connection signal="pressed" from="VBoxContainer/QUIT" to="." method="_on_quit_pressed"]
