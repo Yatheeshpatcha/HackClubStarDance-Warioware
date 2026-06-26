@@ -21,7 +21,7 @@ Global="*uid://v1g4oqntfbjp"
 
 [display]
 
-window/stretch/mode="canvas_items"
+window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 
 [editor_plugins]
