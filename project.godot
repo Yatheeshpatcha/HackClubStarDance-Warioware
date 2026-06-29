@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*uid://v1g4oqntfbjp"
+Node2d="*uid://urpm81g1o5fv"
 
 [display]
 

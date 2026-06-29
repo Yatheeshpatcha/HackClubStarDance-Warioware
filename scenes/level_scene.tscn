@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://b14r4vtekgfau"]
 
 [ext_resource type="Texture2D" uid="uid://byyxnp63imhjc" path="res://download.jpg" id="1_187gu"]
-[ext_resource type="Script" uid="uid://c8vfbux4w1t5h" path="res://level_scene.gd" id="1_lwxgr"]
+[ext_resource type="Script" uid="uid://c8vfbux4w1t5h" path="res://scenes/level_scene.gd" id="1_lwxgr"]
 [ext_resource type="Texture2D" uid="uid://b6o22b6frwoq1" path="res://images.png" id="3_8wodn"]
-[ext_resource type="Script" uid="uid://dmx4f01ohbh0g" path="res://timer_screen.gd" id="4_j2453"]
+[ext_resource type="Script" uid="uid://dmx4f01ohbh0g" path="res://scenes/timer_screen.gd" id="4_j2453"]
 
 [node name="level_scene" type="Node2D" unique_id=189582234]
 script = ExtResource("1_lwxgr")
@@ -13,30 +13,30 @@ offset_right = 1147.0
 offset_bottom = 640.0
 texture = ExtResource("1_187gu")
 
-[node name="sun container" type="HBoxContainer" parent="." unique_id=253381043]
+[node name="GarlicContainer" type="HBoxContainer" parent="." unique_id=253381043]
 offset_left = 3.0
 offset_top = 82.0
 offset_right = 1144.0
 offset_bottom = 307.0
 
-[node name="sun 1" type="TextureRect" parent="sun container" unique_id=1791223356]
+[node name="Garlic" type="TextureRect" parent="GarlicContainer" unique_id=1791223356]
 layout_mode = 2
 texture = ExtResource("3_8wodn")
 
-[node name="sun 2" type="TextureRect" parent="sun container" unique_id=974844877]
+[node name="Garlic2" type="TextureRect" parent="GarlicContainer" unique_id=974844877]
 layout_mode = 2
 texture = ExtResource("3_8wodn")
 
-[node name="sun 3" type="TextureRect" parent="sun container" unique_id=825362503]
+[node name="Garlic3" type="TextureRect" parent="GarlicContainer" unique_id=825362503]
 layout_mode = 2
 texture = ExtResource("3_8wodn")
 script = ExtResource("4_j2453")
 
-[node name="sun 4" type="TextureRect" parent="sun container" unique_id=781597641]
+[node name="Garlic4" type="TextureRect" parent="GarlicContainer" unique_id=781597641]
 layout_mode = 2
 texture = ExtResource("3_8wodn")
 
-[node name="sun 5" type="TextureRect" parent="sun container" unique_id=2050296349]
+[node name="Garlic5" type="TextureRect" parent="GarlicContainer" unique_id=2050296349]
 layout_mode = 2
 texture = ExtResource("3_8wodn")
 
@@ -55,5 +55,5 @@ offset_top = 304.0
 offset_right = 615.0
 offset_bottom = 368.0
 theme_override_colors/default_color = Color(0.043137256, 0.003921569, 0.050980393, 1)
-theme_override_font_sizes/normal_font_size = 42
+theme_override_font_sizes/normal_font_size = 14
 text = "0.0"
