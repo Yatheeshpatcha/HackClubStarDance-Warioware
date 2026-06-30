@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://idqf0iqjloiu"]
+
+[ext_resource type="Script" uid="uid://ct0lli24l16md" path="res://scenes/minigame_2.gd" id="1_dqa6p"]
+[ext_resource type="Texture2D" uid="uid://byyxnp63imhjc" path="res://download.jpg" id="1_ksu6r"]
+[ext_resource type="Texture2D" uid="uid://bhvvu7mx8w8n7" path="res://images__1_-removebg-preview.png" id="2_dqa6p"]
+[ext_resource type="Script" uid="uid://8fikfdbt7fw5" path="res://scenes/button_1.gd" id="3_c3ytc"]
+[ext_resource type="PackedScene" uid="uid://b21n3kxbbdagc" path="res://scenes/node_2d.tscn" id="4_eachr"]
+
+[node name="Minigame_2" type="Node2D" unique_id=1562822468]
+script = ExtResource("1_dqa6p")
+
+[node name="background" type="TextureRect" parent="." unique_id=1923926427]
+offset_left = -397.0
+offset_top = -638.0
+offset_right = 2746.0
+offset_bottom = 1233.0
+texture = ExtResource("1_ksu6r")
+
+[node name="Button_1" type="TextureButton" parent="." unique_id=623525024]
+offset_right = 225.0
+offset_bottom = 225.0
+texture_normal = ExtResource("2_dqa6p")
+script = ExtResource("3_c3ytc")
+
+[node name="Button_2" type="TextureButton" parent="." unique_id=862332335]
+offset_left = 851.0
+offset_top = 382.0
+offset_right = 1076.0
+offset_bottom = 607.0
+texture_normal = ExtResource("2_dqa6p")
+script = ExtResource("3_c3ytc")
+
+[node name="Button_3" type="TextureButton" parent="." unique_id=837982932]
+offset_left = 83.0
+offset_top = 394.0
+offset_right = 308.0
+offset_bottom = 619.0
+texture_normal = ExtResource("2_dqa6p")
+script = ExtResource("3_c3ytc")
+
+[node name="Button_4" type="TextureButton" parent="." unique_id=1520951756]
+offset_left = 439.0
+offset_top = 213.0
+offset_right = 664.0
+offset_bottom = 438.0
+texture_normal = ExtResource("2_dqa6p")
+script = ExtResource("3_c3ytc")
+
+[node name="Node2D" parent="." unique_id=1061907810 instance=ExtResource("4_eachr")]
+position = Vector2(1719, 698)
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Node2D" unique_id=249900374]
+offset_left = -867.0
+offset_top = -662.0
+offset_right = -364.0
+offset_bottom = -493.0
+theme_override_colors/default_color = Color(0.019607844, 0.007843138, 0.023529412, 1)
+theme_override_font_sizes/normal_font_size = 100
+text = "0.0"
+
+[connection signal="pressed" from="Button_1" to="Button_1" method="_on_pressed"]
+[connection signal="pressed" from="Button_2" to="Button_2" method="_on_pressed"]
+[connection signal="pressed" from="Button_3" to="Button_3" method="_on_pressed"]
+[connection signal="pressed" from="Button_4" to="Button_4" method="_on_pressed"]

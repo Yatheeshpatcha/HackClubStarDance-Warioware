@@ -1,6 +1,5 @@
 extends Node2D
-@onready var timer_label: RichTextLabel = $timer
-
+@onready var timer: RichTextLabel = $timer 
 
 var time : float
 
@@ -11,7 +10,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-		timer.text = "%0.2f" % time
+	timer.text = str(snapped(time, 0.10)) # this makes names easier
 
 func Timer(start_time: float): # making a new function for timer countdown!
 	# we want the timer to go down, and when it reaches 0 it transitions 

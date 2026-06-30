@@ -26,6 +26,7 @@ func _ready() -> void:
 
 
 
+
 # Above, your script is being told to go to the next minigame. If the 
 # current minigame is Level 1, then you would be on minigame 1. If you 
 # complete that level, you have the minigames_done add one, and then you 

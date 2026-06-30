@@ -12,6 +12,7 @@ signal garlic_collected
 func _process(delta: float) -> void: # this runs EVERY FRAME! 
 	
 	if player_area.overlaps_area(self_area): # checks if overlapping
+		var garlic_collected 
 		if self.visible:
 			emit_signal("garlic_collected") #signal broadcast
 			self.hide() #removed from player sight; collected
