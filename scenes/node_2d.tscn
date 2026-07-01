@@ -5,6 +5,6 @@
 [node name="Node2D" type="Node2D" unique_id=1061907810]
 script = ExtResource("1_6e84v")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1088698894]
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1088698894]
 offset_right = 40.0
 offset_bottom = 40.0

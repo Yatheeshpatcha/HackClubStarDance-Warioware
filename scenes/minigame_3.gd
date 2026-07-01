@@ -35,7 +35,7 @@ func _ready() -> void:
 		# tell the script to wait for a signal, or for when a function finshes
 
 
-	await themed_timer.Timer(10.0) #accessing a function from this node
+	await themed_timer.Timer(15.0) #accessing a function from this node
 	#after this is compeleted...
 	timer_end = true # now we're saying "oh ye you ran out of time"
 
@@ -43,7 +43,7 @@ func _process(delta: float) -> void: # running every frame brochacho
 	timer.text = str(time) # make ths text reflect the value of the time variable. this makes names easier. the str() converts the int to a String
 
 	
-	if garlic_collected == 3: # the double equals is just an argument asking if it's the same, with "=" it'll give an error
+	if garlic_collected == 1: # the double equals is just an argument asking if it's the same, with "=" it'll give an error
 		if Global.minigames_done > 3: # we access a global script and see how many minigames have been compeleted
 			get_tree().change_scene_to_file("res://scenes/end_screen.tscn") # change current play scene into another, but you make your own finish screen in a later challenge, dont worry abt this rn
 		else:
@@ -56,22 +56,10 @@ func _process(delta: float) -> void: # running every frame brochacho
 		get_tree().change_scene_to_file("res://scenes/level_scene.tscn") # back to intermission
 		
 
-func garlic_collect() -> void: # cool function that you connect to those garlics
-	garlic_collected = garlic_collected +1
-	return
-
-
-func _on_sun_2_garlic_collected() -> void:
-	garlic_collected = garlic_collected +1
-	return
 
 
 
-func _on_sun_3_garlic_collected() -> void:
-	garlic_collected = garlic_collected +1
-	return
 
-
-func _on_sun_4_garlic_collected() -> void:
+func _on_sun_6_garlic_collected() -> void:
 	garlic_collected = garlic_collected +1
 	return

@@ -1,5 +1,5 @@
 extends Node2D
-@onready var timer: RichTextLabel = $timer 
+@onready var timer: RichTextLabel = $Timer 
 
 var time : float
 

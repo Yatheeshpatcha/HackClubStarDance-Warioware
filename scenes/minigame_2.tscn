@@ -49,13 +49,13 @@ script = ExtResource("3_c3ytc")
 [node name="Node2D" parent="." unique_id=1061907810 instance=ExtResource("4_eachr")]
 position = Vector2(1719, 698)
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="Node2D" unique_id=249900374]
-offset_left = -867.0
-offset_top = -662.0
-offset_right = -364.0
-offset_bottom = -493.0
-theme_override_colors/default_color = Color(0.019607844, 0.007843138, 0.023529412, 1)
-theme_override_font_sizes/normal_font_size = 100
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1956463970]
+offset_left = 859.0
+offset_top = 37.0
+offset_right = 1066.0
+offset_bottom = 154.0
+theme_override_colors/default_color = Color(0.003921569, 0.003921569, 0.02745098, 1)
+theme_override_font_sizes/normal_font_size = 50
 text = "0.0"
 
 [connection signal="pressed" from="Button_1" to="Button_1" method="_on_pressed"]
