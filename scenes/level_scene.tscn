@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://byyxnp63imhjc" path="res://download.jpg" id="1_187gu"]
 [ext_resource type="Script" uid="uid://c8vfbux4w1t5h" path="res://scenes/level_scene.gd" id="1_lwxgr"]
-[ext_resource type="Texture2D" uid="uid://b6o22b6frwoq1" path="res://images.png" id="3_8wodn"]
+[ext_resource type="Texture2D" uid="uid://bhvvu7mx8w8n7" path="res://images__1_-removebg-preview.png" id="3_a74lg"]
 
 [node name="level_scene" type="Node2D" unique_id=189582234]
 script = ExtResource("1_lwxgr")
@@ -20,23 +20,23 @@ offset_bottom = 307.0
 
 [node name="Garlic" type="TextureRect" parent="GarlicContainer" unique_id=1791223356]
 layout_mode = 2
-texture = ExtResource("3_8wodn")
+texture = ExtResource("3_a74lg")
 
 [node name="Garlic2" type="TextureRect" parent="GarlicContainer" unique_id=974844877]
 layout_mode = 2
-texture = ExtResource("3_8wodn")
+texture = ExtResource("3_a74lg")
 
 [node name="Garlic3" type="TextureRect" parent="GarlicContainer" unique_id=825362503]
 layout_mode = 2
-texture = ExtResource("3_8wodn")
+texture = ExtResource("3_a74lg")
 
 [node name="Garlic4" type="TextureRect" parent="GarlicContainer" unique_id=781597641]
 layout_mode = 2
-texture = ExtResource("3_8wodn")
+texture = ExtResource("3_a74lg")
 
 [node name="Garlic5" type="TextureRect" parent="GarlicContainer" unique_id=2050296349]
 layout_mode = 2
-texture = ExtResource("3_8wodn")
+texture = ExtResource("3_a74lg")
 
 [node name="Level" type="RichTextLabel" parent="." unique_id=1918421651]
 offset_left = 505.0

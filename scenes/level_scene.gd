@@ -11,7 +11,7 @@ extends Node2D
 var time
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	await Timer(9.0) # using the function created
+	await Timer(3.0) # using the function created
 	
 
 	
@@ -37,7 +37,9 @@ func _ready() -> void:
 		get_tree().change_scene_to_file("res://scenes/end_screen.tscn") # changes your scene
 	
 	if Global.lives == 0:
-		get_tree().change_scene_to_file("res://scenes/end_screen.tscn") # changes your scene
+		Engine.get_main_loop().call_deferred("change_scene_to_file", "res://scenes/lose_screen.tscn")
+
+
 	
 
 

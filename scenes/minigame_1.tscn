@@ -40,6 +40,7 @@ offset_top = 534.0
 offset_right = 1144.0
 offset_bottom = 647.0
 color = Color(0.02745098, 0.88235295, 0.40392157, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="platform 1" type="CollisionShape2D" parent="platform 1" unique_id=1161048477]
 position = Vector2(566.625, 594)
@@ -53,6 +54,7 @@ offset_top = 420.0
 offset_right = 1032.0
 offset_bottom = 483.0
 color = Color(0.02745098, 0.88235295, 0.40392157, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platform 2" unique_id=989866106]
 position = Vector2(755, 444)
@@ -66,6 +68,7 @@ offset_top = 356.0
 offset_right = 1537.0
 offset_bottom = 419.0
 color = Color(0.02745098, 0.88235295, 0.40392157, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platform 3" unique_id=710518276]
 position = Vector2(1362, 389)
@@ -79,6 +82,7 @@ offset_top = 257.0
 offset_right = 2050.0
 offset_bottom = 320.0
 color = Color(0.02745098, 0.88235295, 0.40392157, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platform 4" unique_id=340441587]
 position = Vector2(1870, 293)
@@ -103,6 +107,7 @@ offset_top = -86.0
 offset_right = 130.0
 offset_bottom = 139.0
 texture = ExtResource("3_0hvi2")
+metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="sun" unique_id=841942650]
 position = Vector2(-48, 27)
@@ -121,6 +126,7 @@ offset_top = -140.0
 offset_right = 162.0
 offset_bottom = 85.0
 texture = ExtResource("3_0hvi2")
+metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="sun2" unique_id=1006362228]
 position = Vector2(-33, 12)
@@ -139,6 +145,7 @@ offset_top = -80.0
 offset_right = 108.0
 offset_bottom = 145.0
 texture = ExtResource("3_0hvi2")
+metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="sun3" unique_id=1332190372]
 position = Vector2(-33, 12)
@@ -157,6 +164,7 @@ offset_top = -91.0
 offset_right = 146.0
 offset_bottom = 134.0
 texture = ExtResource("3_0hvi2")
+metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="sun4" unique_id=1160574242]
 position = Vector2(18, 5)
@@ -173,6 +181,7 @@ offset_bottom = 343.0
 theme_override_colors/default_color = Color(0.09019608, 0.050980393, 0.015686275, 1)
 theme_override_font_sizes/normal_font_size = 50
 text = "0.0"
+metadata/_edit_use_anchors_ = true
 
 [connection signal="garlic_collected" from="sun" to="." method="_on_sun_garlic_collected"]
 [connection signal="garlic_collected" from="sun2" to="." method="_on_sun_2_garlic_collected"]
